@@ -1,0 +1,23 @@
+Algoritmo Ejercicio12
+	Definir contadorMujers,contadorHombres,contadorh1,contadorh2, contador Como Entero
+	Definir s Como Caracter
+	Repetir
+		Escribir "Ingrese su altura"
+		Leer h
+		Escribir "Ingrese su edad"
+		Leer e
+		Escribir "Ingrese su sexo como F si es femenina o M si es Masculino"
+		Leer s
+		contador=contador+e
+		Si s=="F" o s=="f" Entonces
+			contadorh1=contadorh1+h
+			contadorMujers=contadorMujers+1
+		SiNo
+			contadorh2=contadorh2+h
+			contadorHombres=contadorHombres+1
+		Fin Si
+	Hasta Que h<0
+	Escribir "promedio de altura de las mujeres es de: " contadorh1/contadorMujers
+	Escribir "promedio de altura de las hombres es de: " contadorh2/contadorHombres
+	Escribir "promedio de edad de los participantes es de: " contador/(contadorHombres+contadorMujers)
+FinAlgoritmo
